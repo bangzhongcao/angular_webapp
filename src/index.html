@@ -4,12 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 	<title>webapp</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 	<div ui-view></div>
 	angularJS gg
-	<script src='../vendor/angular/angular.min.js'></script>
-	<script src='../vendor/angular-ui-router/release/angular-ui-router.min.js'></script>
-	<script src='../js/index.js'></script>
+	<script>
+	// 字体动态变化 每个字占宽度的十分之一
+		document.getElementsByTagName('html')[0].style.fontSize = 
+			window.screen.width / 10 +'px';
+	</script>
+	<script src='vendor/angular/angular.min.js'></script>
+	<script src='vendor/angular-ui-router/release/angular-ui-router.min.js'></script>
+	<script src='js/index.js'></script>
 </body>
-</html>
+</html> 
