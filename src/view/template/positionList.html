@@ -1,10 +1,8 @@
-<ul class="position_list">
-	<li class="item">
-		<img src="" alt="" class="logo">
-		<h3 class="title">运营</h3>
-		<p class="text">
-			搜狐[北京] 互联网<br>
-			2017-07-13 18:22
-		</p>
+<ul class="position_list bg-w">
+	<li ui-sref='position({id:item.id})' class="item" ng-repeat='item in data'>
+		<img ng-src="{{item.imgSrc}}" alt="" class="logo f-l">
+		<h3 class="title" ng-bind='item.name'></h3>
+		<p class="text" ng-bind="item.companyName+'['+item.city+']'+' '+item.industry"></p>
+		<p class="text" ng-bind='item.time'></p>
 	</li>
 </ul>
