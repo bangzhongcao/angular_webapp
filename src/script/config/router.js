@@ -10,6 +10,10 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',
 			url:'/position/:id',
 			templateUrl:'view/position.html',
 			controller:'positionCtrl'
+		}).state('companyInfo',{
+			url:'/companyInfo/:id',
+			templateUrl:'view/company_info.html',
+			controller:'companyinfoCtrl'
 		});
 		$urlRouterProvider.otherwise('main');
 }])
