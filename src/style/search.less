@@ -1,0 +1,29 @@
+.search_tab{
+	background-color: @headBgColor;
+	.h(40);
+	.lh(40);
+	input{
+		.h(25);
+		.fs(16);
+		width:60%;
+		border-radius: 30px;
+		border:0;
+		outline: none;
+		padding: 0 8px;
+		background-color: @bodyBgColor;
+	}
+	span{
+		img{
+			transform:scale(0.7);
+		}
+		&:first-child{
+			color:@defaultColor;
+		}
+		&:last-child{
+			background: url(../image/search.png) no-repeat left bottom;
+			background-size: 18px;
+			.pl(20);
+			color:@muteColor;
+		}
+	}
+}

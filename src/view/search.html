@@ -1,0 +1,9 @@
+<div class="search_tab ta-c">
+	<span ui-sref='main'>取消</span>
+	<input type="text" ng-model='searchInfo' placeholder='搜索职位/公司名称'>
+	<span ng-click='search()'>搜索</span>
+</div>
+<div app-tab></div>
+<div app-position-list data='list' filter-obj='filterobj'></div>
+<div app-foot></div>
+<div app-sheet></div>

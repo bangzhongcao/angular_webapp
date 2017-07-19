@@ -14,6 +14,10 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',
 			url:'/companyInfo/:id',
 			templateUrl:'view/company_info.html',
 			controller:'companyinfoCtrl'
+		}).state('search',{
+			url:'/search',
+			templateUrl:'view/search.html',
+			controller:'searchCtrl'
 		});
 		$urlRouterProvider.otherwise('main');
 }])

@@ -1,0 +1,9 @@
+<div class='sheet p-f' ng-show='visible'>
+	<div class="wrap ta-c">
+		<ul>
+			<li ng-repeat='item in sheetlist' ng-bind='item.name'
+			ng-click='selectCondition(item)'></li>
+		</ul>
+		<div class="cancel" ng-click='cancel()'>取消</div>
+	</div>
+</div>

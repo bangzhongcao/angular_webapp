@@ -1,0 +1,31 @@
+.sheet{
+	.t(0);
+	.l(0);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: flex;
+	justify-content:center;
+	align-items:flex-end;
+	.wrap{
+		width: 96%;
+		.lh(50);
+		color:@sheetColor;
+		ul{
+			background-color: @sheetBgColor;
+			border-radius: 5px;
+			overflow: auto;
+			max-height: 255px;
+			li{
+				.h(50);
+				border-bottom: 1px solid @lineColor;
+			}
+		}
+		.cancel{
+			.h(50);
+			margin: 10px 0;
+			border-radius: 5px;
+			background-color: @sheetBgColor;
+		}
+	}
+}
