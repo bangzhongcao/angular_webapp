@@ -1,6 +1,6 @@
 <div class='bg-w position_info p-r'>
-	<p><span ng-bind='pos.name'></span><span class='ml c-r' ng-bind='pos.salaryName'></span></p>
-	<p><span ng-bind='pos.cityName'></span><span class='ml' ng-bind='pos.experience'></span><span class='ml' ng-bind='pos.education'></span></p>
+	<p><span ng-bind='position.name'></span><span class='ml c-r' ng-bind='position.salaryName'></span></p>
+	<p><span ng-bind='position.cityName'></span><span class='ml' ng-bind='position.experience'></span><span class='ml' ng-bind='position.education'></span></p>
 	<p ng-bind='pos.benefit'></p>
-	<img ng-show='isLogin' class='p-a' ng-src="{{imgPath}}" alt="">
+	<img ng-show='isLogin' class='p-a' ng-src="{{isActive?ActiveImg:UnactiveImg}}" ng-click='collect(position)'alt="">
 </div>

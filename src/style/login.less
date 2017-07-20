@@ -1,0 +1,82 @@
+.login{
+	width: 100%;
+	height: 100%;
+	background: url('../image/background.png') no-repeat top left;
+	background-size: cover;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	form{
+		width: 80%;
+		input{
+			.h(35);
+			.fs(16);
+			width: 84%;
+			border:0;
+			outline-style: none;
+			box-sizing: border-box;
+			.pl(30);
+			background-color: rgba(0,0,0,.2);
+			color:@defaultColor;
+			&::-webkit-input-placeholder{
+				.fs(14);
+				color:@defaultColor;
+			}
+		}
+		span{
+			width: 16%;
+			.h(35);
+			background-size: 20px 20px;
+		}
+		.account{
+			.mb(2);
+			span{
+				background:rgba(0,0,0,.5) url('../image/account.png') no-repeat center;
+			}
+		}
+		.password{
+			span{
+				background:rgba(0,0,0,.5) url('../image/lock.png') no-repeat center;
+			}
+		}
+		.message{
+			margin: 40px 0 -20px 0;
+			input{
+				.pl(0);
+				width: 50%;
+				.h(30);
+				text-align: center;
+			}
+			.get_code{
+				.t(3);
+				.r(10);
+				.w(110);
+				outline-style: none;
+				background-color: rgba(0,0,0,.1);
+				border:1px solid @headBgColor;
+				padding: 3px 5px;
+				color:@headBgColor;
+			}
+		}
+		.btns{
+			.mt(60);
+			button{
+				outline-style: none;
+				width: 100%;
+				border:1px solid @headBgColor;
+				.fs(18);
+				.h(32);
+				font-weight: 700;
+				&.btn_login{
+					.mb(20);
+					background-color: @headBgColor;
+					color:@defaultColor;
+				}
+				&.btn_register{
+					background-color: rgba(18,213,181,.2);
+					color:@headBgColor;
+				}
+			}
+		}
+	}
+}

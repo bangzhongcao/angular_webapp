@@ -18,6 +18,26 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',
 			url:'/search',
 			templateUrl:'view/search.html',
 			controller:'searchCtrl'
+		}).state('login',{
+			url:'/login',
+			templateUrl:'view/login.html',
+			controller:'loginCtrl'
+		}).state('register',{
+			url:'/register',
+			templateUrl:'view/register.html',
+			controller:'registerCtrl'
+		}).state('collection',{
+			url:'/collection',
+			templateUrl:'view/collection.html',
+			controller:'collectionCtrl'
+		}).state('self',{
+			url:'/self',
+			templateUrl:'view/self.html',
+			controller:'selfCtrl'
+		}).state('postLog',{
+			url:'/postLog',
+			templateUrl:'view/postLog.html',
+			controller:'postLogCtrl'
 		});
 		$urlRouterProvider.otherwise('main');
 }])

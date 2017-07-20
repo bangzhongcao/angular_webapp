@@ -9,6 +9,17 @@
 @import 'template/sheet.less';
 @import 'search.less';
 @import 'property.less';
+@import 'login.less';
+@import 'self.less';
+
+.ng-enter{
+  transition:0.5s linear all;
+  opacity: 0;
+}
+.ng-enter-active{
+  opacity: 1;
+}
+
 .fs(@px) {
 	// 初始时设置HTML字体大小为37.5px
   font-size: unit(@px / 37.5, rem);

@@ -71,7 +71,7 @@ gulp.task('serve',['build'],function(){
 		port:1234
 	});
 	//打开页面
-	open('http://localhost:1234');
+	open('http://localhost:1234/');
 	//watch 监听 修改文件自动执行相应的任务 第一个参数是监听的内容
 	// 第二个参数是任务 一旦参数变化，执行对应的任务
 	gulp.watch('bower_components/**/*',['lib']);

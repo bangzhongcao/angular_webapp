@@ -1,0 +1,16 @@
+<div class="login p-f">
+	<form name='form'>
+		<div class="account">
+			<span class='f-l'></span> 
+			<input name="phone" ng-model='user.phone'validator="required,phone" type="text" placeholder='输入手机号'>
+		</div>
+		<div class="password">
+			<span class='f-l'></span>
+			<input name="password" ng-model='user.pass' validator="required,password" type="password" placeholder='输入密码'>
+		</div>
+		<div class="btns">
+			<button class='btn_login' validation-submit="form" ng-click="submit()">登录</button>
+			<button ui-sref='register' class="btn_register" >注册</button>
+		</div>
+	</form>
+</div>

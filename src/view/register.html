@@ -1,0 +1,20 @@
+<div class="login p-f">
+	<form name='form'>
+		<div class="account">
+			<span class='f-l'></span>
+			<input name='phone' type="text" ng-model='user.phone' validator="required,phone" placeholder='输入手机号'>
+		</div>
+		<div class="password">
+			<span class='f-l'></span>
+			<input name='password' type="password" ng-model='user.pass' validator="required,password" placeholder='设置6位以上的密码'>
+		</div>
+		<div class="message p-r">
+			<input name='required' type="text" ng-model='user.code' validator="required" placeholder='输入手机验证码'>
+			<button class='get_code p-a' ng-click='send()'ng-bind='time?time:"点击获取验证码"'></button>
+		</div>
+		<div class="btns">
+			<button ui-sref='login' class='btn_login'>登录</button>
+			<button class="btn_register" validation-submit="form" ng-click="submit()" >注册</button>
+		</div>
+	</form>
+</div>

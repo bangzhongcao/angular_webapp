@@ -1,0 +1,45 @@
+.self{
+	.head_pic{
+		background-color: @headBgColor;
+		border: 1px solid @headBgColor;
+		.h(180);
+		.self_pic{
+			.w(80);
+			.h(80);
+			overflow: hidden;
+			border-radius: 40px;
+			background-color: #fff;
+			margin: 35px auto;
+			img{
+				.w(80);
+				.h(80);
+			}
+		}
+		p{
+			color:@defaultColor;
+			.fs(18);
+			.mt(-20);
+		}
+	}
+	.function_list{
+		.mt(12);
+		.lh(45);
+		background-color: @defaultColor;
+		li{
+			.h(45);
+			padding: 0 15px;
+			span{
+				color:@muteColor;
+			}
+			&:first-child{
+				border-bottom: 1px solid @lineColor;
+			}
+		}
+	}
+	.logoff{
+		.mt(12);
+		.lh(50);
+		color:@logOffColor;
+		background-color: @defaultColor;
+	}
+}
